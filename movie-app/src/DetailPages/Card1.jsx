@@ -1,16 +1,4 @@
 
-// import React from "react";
-// import MovieDetails from "./MovieDetails";
-// import movieData from "./MovieData";
-
-// const Card1 = () => {
-//   const movie = movieData.find((m) => m.id === 1);
-//   return <MovieDetails {...movie} />;
-// };
-
-// export default Card1;
-
-// src/DetailPages/Card1.jsx
 import { useParams } from "react-router-dom";
 import movieData from "./MovieData";
 

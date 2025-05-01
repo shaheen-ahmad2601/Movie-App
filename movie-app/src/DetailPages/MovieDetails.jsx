@@ -1,18 +1,24 @@
-// MovieDetails.js
 import React from "react";
+import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import "./Card1.css"; // You can rename it to MovieDetails.css for clarity
+import "./Card1.css";
+import movieData from "./MovieData"; // Import your movie data
 
-const MovieDetails = ({ image, title, videoLink, rating, description }) => {
+const MovieDetails = () => {
+  const { id } = useParams();
+  const movie = movieData.find(item => item.id === Number(id));
+
+  if (!movie) return <div>Movie Not Found</div>;
+
   return (
     <div className="details-page">
       <div className="details-container">
         <div>
-          <img src={image} alt={title} className="details-image" />
+          <img src={movie.image} alt={movie.title} className="details-image" />
         </div>
         <div className="details-content">
-          <h1 className="details-title">{title}</h1>
-          <Link to={videoLink}>
+          <h1 className="details-title">{movie.title}</h1>
+          <Link to={movie.videoUrl}>
             <button
               type="button"
               style={{
@@ -31,8 +37,8 @@ const MovieDetails = ({ image, title, videoLink, rating, description }) => {
               Play Now
             </button>
           </Link>
-          <p className="details-description rating">Rating : {rating}</p>
-          <p className="details-description">{description}</p>
+          <p className="details-description rating">Rating : {movie.rating}</p>
+          <p className="details-description">{movie.description}</p>
         </div>
       </div>
     </div>
