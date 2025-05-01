@@ -1,0 +1,43 @@
+.movie-container {
+  padding: 20px;
+  color: white;
+  background-color: black;
+  font-family: Arial, sans-serif;
+  padding-bottom: 40px;
+}
+
+
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.scroller {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.scroller::-webkit-scrollbar {
+  height: 14px;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+  background: rgb(182, 10, 10);
+  border-radius: 4px;
+}
+
+.movie-box {
+  flex: 0 0 auto;
+  width: 170px;
+}
+
+.movie-box img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+}

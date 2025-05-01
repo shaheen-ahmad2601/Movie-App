@@ -1,0 +1,20 @@
+
+
+.video-page{
+    background-color: black;
+}
+.video-container{
+    display: block;
+    justify-content: center;
+    /* border: 1px solid red; */
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    gap: 4rem;
+}
+
+.video-content{
+    /* border: 2px solid green; */
+    max-width: 600px;
+    color: rgb(196, 193, 193);
+}

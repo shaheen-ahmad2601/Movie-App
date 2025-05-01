@@ -1,0 +1,45 @@
+.details-page {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 434px;
+    padding: 2rem;
+    flex-wrap: wrap;
+    width: 95%;
+
+}
+
+.details-image {
+    flex: 1;
+    max-width: 300px;
+   height: 300px;
+}
+
+.details-content {
+    flex: 2;
+    position: relative;
+    bottom: 30px;
+}
+
+.details-container {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    gap: 4rem;
+}
+
+.details-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.details-description {
+    font-size: 1.2rem;
+    color: rgb(180, 177, 177);
+
+}
+
+.rating {
+    text-align: center;
+}
