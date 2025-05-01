@@ -18,7 +18,7 @@ const MovieDetails = () => {
         </div>
         <div className="details-content">
           <h1 className="details-title">{movie.title}</h1>
-          <Link to={movie.videoUrl}>
+          <Link to={movie.videoLink}>
             <button
               type="button"
               style={{
